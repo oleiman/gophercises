@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            .text {
+            border: 5px outset red;
+            background-color: lightblue;
+            text-align: left;
+            }
+            .options {
+            border: 3px outset blue;
+            background-color: magenta;
+            text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{{.Title}}</h1>
+        <div class="text">
+            {{range .Paragraphs}}
+            <p> {{.}} </p>
+            {{end}}
+        </div>
+        <div class="options">
+            <ul>
+                {{range .Options}}
+                <li> <a href="http://localhost:8080/{{.Chapter}}"> {{.Text}} </a> </li>
+                {{end}}
+            </ul>
+        </div>
+    </body>
+</html>
+
