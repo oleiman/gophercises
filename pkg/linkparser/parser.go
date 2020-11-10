@@ -3,6 +3,7 @@ package linkparser
 import (
 	"bufio"
 	"golang.org/x/net/html"
+	"io"
 	"os"
 	"strings"
 )
@@ -41,6 +42,14 @@ func ExtractLinks(root *html.Node) []Link {
 		}
 	}
 	return links
+}
+
+func ParseHtml(reader io.Reader) (*html.Node, error) {
+	doc, err := html.Parse(reader)
+	if err != nil {
+		return nil, err
+	}
+	return doc, nil
 }
 
 // TODO(oren): would rather this took a reader or something
