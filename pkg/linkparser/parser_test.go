@@ -17,11 +17,11 @@ var sample = `
 var ex2 = "ex2.html"
 
 var ex2Expected = []linkparser.Link{
-	linkparser.Link{
+	{
 		Href: "https://www.twitter.com/joncalhoun",
 		Text: "Check me out on twitter",
 	},
-	linkparser.Link{
+	{
 		Href: "https://github.com/gophercises",
 		Text: "Gophercises is on",
 	},
