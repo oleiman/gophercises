@@ -6,8 +6,8 @@ require (
 	github.com/DennisVis/urlshort v0.0.0-20180819174551-927cdd178e5b
 	github.com/boltdb/bolt v1.3.1
 	github.com/gophercises/urlshort v0.0.0-20190723121003-cc800dbaf411
-	github.com/jmoiron/sqlx v1.2.0 // indirect
-	github.com/mattn/go-sqlite3 v1.14.4 // indirect
+	github.com/jmoiron/sqlx v1.2.0
+	github.com/mattn/go-sqlite3 v1.14.4
 	github.com/mitchellh/go-homedir v1.1.0
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/spf13/cobra v1.1.1
