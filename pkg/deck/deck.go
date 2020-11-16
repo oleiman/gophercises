@@ -25,6 +25,14 @@ func NewDeck(opts ...DeckOption) Deck {
 	return deck
 }
 
+// TODO(oren): I don't much like this API
+func (d Deck) Next() (Card, Deck) {
+	if len(d) == 0 {
+		panic("Deck is empty!")
+	}
+	return d[0], d[1:]
+}
+
 // WithCustomSort produces a DeckOption to sort a Deck based on the provided less function.
 func WithCustomSort(less func(d Deck) func(i, j int) bool) DeckOption {
 	return func(d Deck) Deck {
