@@ -70,6 +70,8 @@ github.com/google/pprof v0.0.0-20190515194954-54271f7e092f/go.mod h1:zfwlbNMJ+OI
 github.com/google/renameio v0.1.0/go.mod h1:KWCgfxg9yswjAJkECMjeO8J8rahYeXnNhOm40UhjYkI=
 github.com/googleapis/gax-go/v2 v2.0.4/go.mod h1:0Wqv26UfaUD9n4G6kQubkQ+KchISgw+vpHVxEJEs9eg=
 github.com/googleapis/gax-go/v2 v2.0.5/go.mod h1:DWXyrwAJ9X0FpwwEdw+IPEYBICEFu5mhpdKc/us6bOk=
+github.com/gophercises/quiet_hn v0.0.0-20190103182143-a46a1fecf2b8 h1:ZlBA3egmeh4f1Yjloh8XnMJ3T+S+Izhml8slZ6/TVug=
+github.com/gophercises/quiet_hn v0.0.0-20190103182143-a46a1fecf2b8/go.mod h1:Agx4e8Czcx2J/V+E1Dx/RZ3g5CBPD/QVxyk0SxRxHDo=
 github.com/gophercises/urlshort v0.0.0-20190723121003-cc800dbaf411 h1:jXluXk94Xa6OHiVJFuYsJFrCvcc87iAdOQMy6BCkQiw=
 github.com/gophercises/urlshort v0.0.0-20190723121003-cc800dbaf411/go.mod h1:uSADXLeo9rvYEF7fbNcZ9/84Tk8j3gggJ/ha5iO21MI=
 github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1/go.mod h1:wJfORRmW1u3UXTncJ5qlYoELFm8eSnnEO6hX4iZ3EWY=
