@@ -4,6 +4,7 @@ go 1.15
 
 require (
 	github.com/DennisVis/urlshort v0.0.0-20180819174551-927cdd178e5b
+	github.com/alecthomas/chroma v0.8.2
 	github.com/boltdb/bolt v1.3.1
 	github.com/gophercises/quiet_hn v0.0.0-20190103182143-a46a1fecf2b8 // indirect
 	github.com/gophercises/urlshort v0.0.0-20190723121003-cc800dbaf411

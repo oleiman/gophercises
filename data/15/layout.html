@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <style>
+            .trace {
+            border: 5px outset black;
+            background-color: lightgrey;
+            text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>{{.Message}} </h1>
+        <div class="trace">
+            {{range .Lines}}
+            {{if .File}}
+            <a href="http://localhost:3000/debug/?path={{.Path}}&line={{.Number}}">
+                <pre>{{.Text}}</pre>
+            </a>
+            {{ else }}
+            <pre>{{.Text}}</pre>
+            {{end}}
+            {{end}}
+        </div>
+    </body>
+</html>
