@@ -14,6 +14,7 @@ require (
 	github.com/niemeyer/pretty v0.0.0-20200227124842-a10e7caefd8e // indirect
 	github.com/spf13/cobra v1.1.1
 	github.com/spf13/viper v1.7.0
+	golang.org/x/crypto v0.0.0-20201124201722-c8d3bf9c5392
 	golang.org/x/net v0.0.0-20201109172640-a11eb1b685be
 	golang.org/x/sys v0.0.0-20201109165425-215b40eba54c // indirect
 	golang.org/x/tools v0.0.0-20201114224030-61ea331ec02b // indirect
