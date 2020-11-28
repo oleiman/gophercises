@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <style>
+         .inline {
+             display: inline;
+         }
+         #menu {
+             width: 1300px;
+             height: 600px;
+             background-color: black;
+             text-align: center;
+             vertical-align: middle;
+         }
+         #menu img {
+             width: 100%;
+             height: auto;
+             display: block;
+         }
+        </style>
+        <meta charset="UTF-8"/>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="ie-edge"
+        />
+        <title> Transforming {{.Name}} </title>
+    </head>
+    <body>
+        <table id="menu">
+            {{$name := .Name}}
+            {{$dl := .Final}}
+            {{range .Transforms}}
+            <tr>
+                {{range .}}
+                <td>
+                    <a{{if $dl}}
+                           href="http://localhost:3000/transform/{{$name}}/{{.Mode}}/{{.N}}" download
+                        {{else}}
+                        href="http://localhost:3000/refine/{{$name}}/{{.Mode}}"
+                        {{end}}>
+                        <img
+                            src="http://localhost:3000/transform/{{$name}}/{{.Mode}}/{{.N}}"
+                            alt="Image not Found"
+                        >
+                    </a>
+                </td>
+                {{end}}
+            </tr>
+            {{end}}
+        </table>
+    </body>
+</html>
